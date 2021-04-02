@@ -1,0 +1,49 @@
+version: '3'
+
+services:
+  mediawiki:
+    build:
+      context: .
+      args:
+        mediawiki_image_tag: 1.35
+    restart: unless-stopped
+    env_file:
+      - ./.env.mediawiki
+      - ./.env.mysqluser
+    depends_on:
+      - database
+    networks:
+      - traefik
+      - internal
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.fiwiki.rule=Host(`www.fiwiki.org`)"
+      - "traefik.http.routers.fiwiki.entrypoints=websecure"
+      - "traefik.http.routers.fiwiki.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.fiwiki.service=fiwiki"
+      - "traefik.http.services.fiwiki.loadbalancer.passhostheader=true"
+    volumes:
+      - ./fiwiki.png:/var/www/html/fiwiki.png
+      - ./images:/var/www/html/images
+      - type: bind
+        source: ./LocalSettings.php
+        target: /var/www/html/LocalSettings.php
+
+  database:
+    image: mariadb:10.5
+    restart: unless-stopped
+    env_file:
+      - ./.env.mysqlroot
+      - ./.env.mysqluser
+    networks:
+      - internal
+    volumes:
+      - ./mysql:/var/lib/mysql
+
+networks:
+  traefik:
+    external:
+      name: traefik_proxy
+
+  internal:
+    driver: bridge
