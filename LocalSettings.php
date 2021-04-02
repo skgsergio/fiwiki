@@ -13,7 +13,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 
 
 ## Uncomment this to disable output compression
-# $wgDisableOutputCompression = true;
+$wgDisableOutputCompression = true;
 
 $wgSitename = "FIWIKI";
 
