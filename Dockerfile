@@ -8,6 +8,7 @@ RUN set -eux; \
     { \
         echo "RemoteIPHeader X-Forwarded-For"; \
         echo "RemoteIPProxiesHeader X-Forwarded-By"; \
+        echo 'LogFormat "%a %h %l %u %t \"%r\" %>s %O \"%{Referer}i\" \"%{User-Agent}i\"" combined'; \
     } > "$APACHE_CONFDIR/conf-available/remoteip.conf"; \
     a2enconf remoteip
 
