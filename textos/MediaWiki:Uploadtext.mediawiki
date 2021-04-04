@@ -1,0 +1,7 @@
+<div class="warningbox">
+'''Importante'''
+
+Antes de subir contenido que no te pertenece, por ejemplo material de los profesores, asegúrate que tienes permiso del autor para hacerlo. De lo contrario, dicho contenido podrá ser eliminado a petición de los autores.
+
+Lee [[FIWIKI:Derechos_de_autor]] para más información.
+</div>

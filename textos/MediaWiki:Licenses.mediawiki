@@ -1,0 +1,23 @@
+* subst:uwl|No se que es una licencia
+
+* Contenido propio
+** self|GFDL|cc-by-sa-all|migration=redundant|Contenido propio, copyleft, atribución requerida (Multi-license GFDL, CC BY-SA cualquier versión)
+** self|cc-by-sa-all|Contenido propio, copyleft, atribución requerida (CC BY-SA cualquier versión)
+** self|Cc-zero|CC0 1.0 Universal Public Domain Dedication, renuncio a todos los derechos (Public domain)
+** self|GFDL|cc-by-sa-4.0|migration=redundant|Contenido propio, copyleft, atribución requerida (GFDL, CC BY-SA 4.0)
+** self|GFDL|cc-by-4.0|migration=redundant|Contenido propio, atribución requerida (GFDL, CC BY 4.0)
+** self|cc-by-sa-4.0|Contenido propio, copyleft, atribución requerida (CC BY-SA 4.0)
+
+* Contenido de terceros con licencia
+** Creative Commons
+*** cc-by-sa-4.0|Attribution ShareAlike 4.0
+*** cc-by-sa-3.0|Attribution ShareAlike 3.0
+*** cc-by-4.0|Attribution 4.0
+*** cc-by-3.0|Attribution 3.0
+*** Cc-zero|CC0 1.0 Universal Public Domain Dedication
+*** cc-other|Otra licencia compatible con Creative Commons
+** Otras
+*** subst:uwl|Lo he encontrado en un sitio web aleatorio
+*** Fair use|Fair use
+*** Copyrighted free use|Con copyright, pero con permiso del autor para su uso
+*** Attribution|Puede ser usado para cualquier fin, incluido el comercial, si se atribuye correctamente al autor

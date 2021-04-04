@@ -1,0 +1,7 @@
+FIWIKI es un proyecto alojado por personas sin animo de lucro para los alumnos de la Facultad de Informática de la UPM. El contenido que aquí se encuentra es aportado por diversos miembros de la comunidad educativa.
+
+FIWIKI no se hace responsable de la opinión vertida en las páginas de esta wiki por colaboradores externos a la misma. La responsabilidad última sobre el contenido subido o citado en las páginas es de la persona que los subió.
+
+Si colaboras con FIWIKI asegúrate que posees los derechos correspondientes para hacer público ese material.
+
+Si detectas alguna violación del copyright del material aportado y deseas que sea retirado, por favor ponte en contacto con nosotros por [http://mailto:fiwiki.adm@gmail.com correo electrónico].
