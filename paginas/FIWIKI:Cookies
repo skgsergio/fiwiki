@@ -1,0 +1,51 @@
+FIWIKI usa las siguientes cookies cookies técnicas:
+
+{|
+|fiwikiToken
+|Se usa para mantener la sesión del usuario identificado.
+|-
+|fiwikiUserID
+|Se usa para almacenar el identificador interno del usuario identificado.
+|-
+|fiwikiUserName
+|Se usa para almacenar el nombre del usuario identificado.
+|-
+|fiwiki_analytics_rejected
+|Se usa para recordar el visitante ha rechazado o no el envío de analíticas a Google Analytics. 
+|-
+|fiwiki_session
+|Se usa para mantener la sesión del visitante.
+|-
+|Otras: fiwiki + Nombre
+|Otras cookies de funcionamiento interno de MediaWiki, anteriormente se han detallado las más habituales.
+|-
+|VEE
+|Se usa para recordar la elección de editor del usuario.
+|}
+
+FIWIKI hace uso uso de Cloudflare como CDN (Content Delivery Network) y como capa de seguridad, para ello Cloudflare usa algunas cookies técnicas:
+
+{|
+|__cf_bm
+|Se usa por la protección anti bots para la identificación del usuario en el sitio web. Expira a los 30 minutos y Cloudflare no rastrea a los visitantes entre diferentes sitios web.
+|-
+|__cfduid
+|Se usa para identificar al visitante y determinar si es un posible visitante malicioso. Expira a los 30 días y Cloudflare no rastrea a los visitantes entre diferentes sitios web.
+|}
+
+Para más información sobre las cookies de cloudflare consulta: https://support.cloudflare.com/hc/en-us/articles/200170156-Understanding-the-Cloudflare-Cookies
+
+Si el usuario ha aceptado el uso de Google Analytics además se usarán las siguientes cookies:
+
+{|
+| _ga
+|Se usa para distinguir a los usuarios.
+|-
+|_gid
+|Se usa para distinguir a los usuarios.
+|-
+|_ga_<id>
+|Se usa para mantener el estado de la sesión. 
+|}
+
+Para más información sobre las cookies de Google Analytics consulta: https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage#gtagjs_google_analytics_4_-_cookie_usage
