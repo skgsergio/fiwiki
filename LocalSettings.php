@@ -87,6 +87,9 @@ $wgMemCachedServers = [];
 $wgEnableUploads = true;
 $wgUseImageMagick = true;
 $wgImageMagickConvertCommand = "/usr/bin/convert";
+$wgFileExtensions = [ 'png', 'jpg', 'jpeg', 'webp', 'pdf' ];
+$wgUploadSizeWarning = /* 10MiB = */ 10485760 /* bytes */;
+$wgMaxUploadSize =  /* 20MiB = */ 20971520 /* bytes */;
 
 # InstantCommons allows wiki to use images from https://commons.wikimedia.org
 $wgUseInstantCommons = false;

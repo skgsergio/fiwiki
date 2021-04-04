@@ -12,6 +12,14 @@ RUN set -eux; \
     } > "$APACHE_CONFDIR/conf-available/remoteip.conf"; \
     a2enconf remoteip
 
+## Raise PHP filesize and post size
+RUN set -eu; \
+    { \
+        echo "php_value upload_max_filesize 25M"; \
+        echo "php_value post_max_size 25M"; \
+    } > "$APACHE_CONFDIR/conf-available/php-filesize.conf"; \
+    a2enconf php-filesize
+
 ## Wikimedia skins and extensions
 RUN set -eux; \
     git clone --depth 1 --branch REL$(echo $MEDIAWIKI_MAJOR_VERSION | tr '.' '_') https://github.com/wikimedia/mediawiki-skins-MinervaNeue.git skins/MinervaNeue; \
