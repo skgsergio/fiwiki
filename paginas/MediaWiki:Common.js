@@ -28,6 +28,12 @@
       const rejectBtn = new OO.ui.ButtonWidget({ label: 'Rechazar' });
       rejectBtn.on('click', function(){
         window[analyticsDisableProperty] = true;
+        document.cookie.split(';').forEach(function(c) {
+          c = c.trim();
+          if (c.startsWith('_ga') || c.startsWith('_gid')) {
+            document.cookie = c.split('=')[0] + '=; Path=/; Domain=.' + document.location.host.split('.').slice(-2).join('.') + '; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+          }
+        });
         mw.cookie.set(analyticsRejectedCookie, true);
         $(cookiesDiv).detach();
       });
