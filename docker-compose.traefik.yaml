@@ -5,7 +5,7 @@ services:
     image: traefik:2.4
     restart: unless-stopped
     env_file:
-      - ./env.traefik
+      - ./.env.traefik
     command:
       - "--log.level=INFO"
       - "--api.insecure=false"
