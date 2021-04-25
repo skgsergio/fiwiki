@@ -166,6 +166,14 @@ wfLoadExtension( 'Renameuser' );
 
 wfLoadExtension( 'UserMerge' );
 $wgGroupPermissions['sysop']['usermerge'] = true;
+$wgGroupPermissions['sysop']['deletelogentry'] = true;
+$wgGroupPermissions['sysop']['deleterevision'] = true;
+
+wfLoadExtension( 'DisableAccount' );
+$wgGroupPermissions['sysop']['disableaccount'] = true;
+
+wfLoadExtension( 'LookupUser' );
+$wgGroupPermissions['sysop']['lookupuser'] = true;
 
 ## Captchas
 wfLoadExtensions([ 'ConfirmEdit', 'ConfirmEdit/hCaptcha' ]);

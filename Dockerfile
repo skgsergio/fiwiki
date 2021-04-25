@@ -33,6 +33,14 @@ RUN set -eux; \
     git clone --depth 1 --branch REL$(echo $MEDIAWIKI_MAJOR_VERSION | tr '.' '_') https://github.com/wikimedia/mediawiki-extensions-UserMerge.git extensions/UserMerge; \
     rm -rf extensions/UserMerge/.git
 
+RUN set -eux; \
+    git clone --depth 1 --branch REL$(echo $MEDIAWIKI_MAJOR_VERSION | tr '.' '_') https://github.com/wikimedia/mediawiki-extensions-DisableAccount.git extensions/DisableAccount; \
+    rm -rf extensions/DisableAccount/.git
+
+RUN set -eux; \
+    git clone --depth 1 --branch REL$(echo $MEDIAWIKI_MAJOR_VERSION | tr '.' '_') https://github.com/wikimedia/mediawiki-extensions-LookupUser.git extensions/LookupUser; \
+    rm -rf extensions/LookupUser/.git
+
 ## 3rd party extensions
 RUN set -eux; \
     git clone --depth 1 --branch v0.8.2 https://github.com/jmnote/SimpleMathJax.git extensions/SimpleMathJax; \
