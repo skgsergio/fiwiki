@@ -5,7 +5,7 @@ services:
     build:
       context: .
       args:
-        mediawiki_image_tag: 1.35
+        mediawiki_image_tag: 1.36
     restart: unless-stopped
     env_file:
       - ./.env.mediawiki
@@ -30,7 +30,7 @@ services:
         target: /var/www/html/LocalSettings.php
 
   database:
-    image: mariadb:10.5
+    image: mariadb:10.6
     restart: unless-stopped
     env_file:
       - ./.env.mysqlroot
@@ -42,8 +42,8 @@ services:
 
 networks:
   traefik:
-    external:
-      name: traefik_proxy
+    external: true
+    name: traefik_proxy
 
   internal:
     driver: bridge
